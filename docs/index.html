@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="네이버 부동산 지도로 매물을 찾고, 저장하고, 나란히 비교하는 Windows 앱 Land Browser 다운로드">
+  <title>Land Browser 다운로드</title>
+  <style>
+    :root { color-scheme: dark; font-family: "Segoe UI", "Malgun Gothic", sans-serif; background: #0b1220; color: #e5edf8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(ellipse at 20% 0%, #19345d 0, transparent 42%), #0b1220; }
+    main { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 76px 0 56px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: #a9c9ff; font-weight: 700; letter-spacing: .02em; }
+    .mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: #2563eb; color: white; font-size: 22px; }
+    h1 { margin: 35px 0 14px; font-size: clamp(36px, 7vw, 60px); line-height: 1.08; letter-spacing: -.045em; }
+    .lead { max-width: 670px; color: #aab8ca; font-size: 18px; line-height: 1.7; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 13px; }
+    .button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; padding: 0 21px; border: 1px solid #3b82f6; border-radius: 12px; background: #2563eb; color: white; text-decoration: none; font-weight: 700; }
+    .button.secondary { background: #182438; border-color: #34445b; color: #dbeafe; }
+    .version { color: #8091a9; font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 54px; }
+    .card { min-height: 148px; padding: 20px; border: 1px solid #26364d; border-radius: 15px; background: rgba(20, 31, 48, .82); }
+    .card b { display: block; margin-bottom: 9px; color: #dce9ff; }
+    .card p, .note { margin: 0; color: #96a7bd; line-height: 1.65; font-size: 14px; }
+    section { margin-top: 42px; padding: 24px; border: 1px solid #26364d; border-radius: 15px; background: rgba(20, 31, 48, .82); }
+    h2 { margin: 0 0 12px; font-size: 20px; }
+    ol { margin: 0; padding-left: 21px; color: #aab8ca; line-height: 1.9; }
+    a.inline { color: #90baff; }
+    footer { margin-top: 28px; color: #71839b; font-size: 12px; }
+    @media (max-width: 700px) { main { padding-top: 42px; } .grid { grid-template-columns: 1fr; margin-top: 36px; } .card { min-height: unset; } .actions { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><span class="mark" aria-hidden="true">⌂</span><span>LAND BROWSER</span></div>
+    <h1>매물 검색과 비교를<br>한 화면에서</h1>
+    <p class="lead">네이버 부동산 지도를 보며 매물을 찾고, 관심 매물과 비교 구성을 프로젝트별로 저장하는 Windows 앱입니다.</p>
+    <div class="actions">
+      <a class="button" href="downloads/LandBrowser-Setup.exe">Windows 설치 파일 다운로드</a>
+      <a class="button secondary" href="downloads/LandBrowser-Windows-x64.zip">포터블 ZIP 다운로드</a>
+    </div>
+    <p class="version">Windows 10/11 · x64 · 버전 0.1.0 · <a class="inline" href="downloads/SHA256SUMS.txt">SHA-256 체크섬</a></p>
+
+    <div class="grid">
+      <article class="card"><b>지도 기반 검색</b><p>서울·경기·인천의 매매·전세 조건을 고르고 지도에서 매물 위치를 살펴보세요.</p></article>
+      <article class="card"><b>프로젝트에 저장</b><p>검색 조건, 보관 매물, 메모, 비교 목록을 이름 붙인 프로젝트에 보관합니다.</p></article>
+      <article class="card"><b>나란히 비교</b><p>매물 상세 정보와 제공되는 평면도·사진을 비교 화면에서 확인할 수 있습니다.</p></article>
+    </div>
+
+    <section>
+      <h2>설치 방법</h2>
+      <ol>
+        <li>설치 파일을 내려받아 실행합니다. 사용자 계정에 설치되며 관리자 권한은 필요하지 않습니다.</li>
+        <li>시작 메뉴 바로가기가 생성됩니다. 설치 화면에서 바탕화면 바로가기도 선택할 수 있습니다.</li>
+        <li>Microsoft WebView2 Runtime이 없는 PC에는 설치 프로그램이 런타임을 준비합니다.</li>
+        <li>작업 표시줄 고정은 시작 메뉴에서 Land Browser를 찾아 마우스 오른쪽 버튼을 누른 뒤 <b>작업 표시줄에 고정</b>을 선택하세요.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>데이터와 매물 조회</h2>
+      <p class="note">프로젝트와 사용자 데이터는 PC에 저장되며 앱을 업데이트해도 유지됩니다. 현재 매물 조회 어댑터는 네이버의 공개 문서 API가 아닌 내부 조회 경로를 사용하므로, 허가된 경우에만 이용해야 합니다. 조회 제공 방식과 정책은 바뀔 수 있습니다. 자세한 내용은 앱에 포함된 사용 안내와 제3자 고지를 확인하세요.</p>
+    </section>
+    <footer>Land Browser · Windows x64 다운로드</footer>
+  </main>
+</body>
+</html>
